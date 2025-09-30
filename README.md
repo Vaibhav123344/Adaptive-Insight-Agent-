@@ -76,5 +76,3 @@ Continuous Integration (CI): On every push to the main branch, the workflow inst
 
 Continuous Deployment (CD): The workflow is set up to deploy the application to Streamlit Community Cloud. You will need to configure the STREAMLIT_API_TOKEN in your repository's secrets for this to work.
 
-📄 License
-This project is licensed under the MIT License. See the LICENSE file for details.

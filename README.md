@@ -1,22 +1,22 @@
 A sophisticated, self-correcting Retrieval-Augmented Generation (RAG) agent built with LangGraph and Streamlit. CogniGraph goes beyond standard RAG by intelligently validating its own retrieved information, enabling a fallback mechanism to ensure the most accurate and contextually relevant answers.
 
-Key Features
-Self-Correction Loop: Autonomously grades the relevance of retrieved documents. If the context is insufficient, it rewrites the user's query for a more effective web search.
+**Key Features**
+**Self-Correction Loop**: Autonomously grades the relevance of retrieved documents. If the context is insufficient, it rewrites the user's query for a more effective web search.
 
 Graph-Based Architecture: Utilizes LangGraph to create a robust, stateful agent that visualizes its own thought process (retrieve → grade → decide → rewrite → search → generate).
 
-Hybrid Information Retrieval: Seamlessly combines a local FAISS vector store with real-time web search capabilities via the Tavily API.
+**Hybrid Information Retrieval**: Seamlessly combines a local FAISS vector store with real-time web search capabilities via the Tavily API.
 
-Interactive UI: A polished, chat-based web interface built with Streamlit that shows the agent's internal steps and streams the final answer.
+**Interactive UI**: A polished, chat-based web interface built with Streamlit that shows the agent's internal steps and streams the final answer.
 
 CI/CD Pipeline: Includes a GitHub Actions workflow for automated testing and deployment to Streamlit Community Cloud.
 
-Architecture: The CogniGraph Agent Flow
+**Architecture:** The CogniGraph Agent Flow
 The agent operates as a state machine, moving through a series of nodes to process a query. This graph-based approach allows for complex, cyclical reasoning that is not possible in a simple chain.
 
 (Note: Replace the tag above with an actual image of your app.get_graph().draw_mermaid_png() output for a visual representation in your repository.)
 
-🛠️ Technology Stack
+**🛠️ Technology Stack**
 Backend & Orchestration: Python, LangChain, LangGraph
 
 Frontend: Streamlit
@@ -69,7 +69,7 @@ streamlit run app.py
 
 Your web browser should automatically open to the application's URL (usually http://localhost:8501).
 
-⚙️ CI/CD Pipeline
+**⚙️ CI/CD Pipeline**
 This repository is configured with a GitHub Actions workflow (.github/workflows/main.yml) that automates the following:
 
 Continuous Integration (CI): On every push to the main branch, the workflow installs dependencies and runs flake8 to check for code quality and style issues.
